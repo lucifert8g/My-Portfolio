@@ -33,7 +33,7 @@
 
 ---
 
-## <img src="https://img.icons8.com/?size=100&id=68247&format=png&color=000000" width="50" alt="Live Icon"/> Live Portfolio
+## 🔗 Live Portfolio
 
 <p align="center">
   <a href="https://kinsu.onrender.com">
