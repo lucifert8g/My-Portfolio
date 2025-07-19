@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kinsu Rajput | Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="Kinsu Rajput | Developer Portfolio">
+  <meta name="description" content="Kinsu Rajput - BCA student, Python & C developer, Telegram bot creator. Explore my portfolio, projects, and contact info.">
+  <meta name="keywords" content="Kinsu Rajput, pyKinsu, Telegram bots, Python developer, GitHub, Portfolio, BCA Student, HTML CSS">
+  <meta name="author" content="Kinsu Rajput">
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Kinsu Rajput | Developer Portfolio">
+  <meta property="og:description" content="Check out the technical skills of Kinsu Rajput including Python, HTML, CSS, and Telegram Bots.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinsu.onrender.com/">
+  <meta property="og:image" content="https://github.com/pyKinsu.png">
+
+    <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kinsu Rajput | Developer Portfolio">
+  <meta name="twitter:description" content="Explore Kinsu Rajput’s developer journey, Python projects, and Telegram bots. Follow on GitHub!">
+  <meta name="twitter:image" content="https://github.com/pyKinsu.png">
+  <meta name="twitter:site" content="@pyKinsu">
+  <meta name="twitter:creator" content="@pyKinsu">
+  
+  <!-- Favicon Setup -->
+  <link rel="icon" type="image/png" href="/Favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/Favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/Favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/Favicon/site.webmanifest" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Common Stylus -->
+  <link rel="stylesheet" href="/css/stylus.css">
+
+  <!-- Page-Specific Styling -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px 40px;
+    }
+
+    .hero-card {
+      border: 1px solid #a855f7;
+      border-radius: 20px;
+      background: rgba(168, 85, 247, 0.05);
+      box-shadow: 0 0 15px #a855f73f;
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .hero-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 3px solid #00f2ff;
+      box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.06);
+    }
+
+    .hero-name {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #f0f0f0;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .hero-title {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* About Section */
+    .about {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00f2ff;
+      text-align: center;
+    }
+
+    .glass-box {
+      border: 1px solid #a855f7;
+      border-radius: 12px;
+      background: rgba(168, 85, 247, 0.05);
+      box-shadow: 0 0 15px #a855f73f;
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .glass-box:hover {
+      background: rgba(168, 85, 247, 0.08);
+      box-shadow: 0 0 25px #a855f7a8;
+    }
+
+    /* Projects Section */
+    .projects {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .projects h2 {
+      font-size: 2em;
+      color: #00f2ff;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .project-button {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+      transition: 0.4s ease;
+    }
+
+    .project-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    }
+
+    .project-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .status-label {
+      font-size: 0.9em;
+      color: #bb86fc;
+      padding: 5px 12px;
+      border: 1px solid #a855f7;
+      border-radius: 20px;
+      background: rgba(138, 43, 226, 0.1);
+    }
+
+    .github-link {
+      color: #a855f7;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 50px;
+      border: 1px solid #a855f7;
+      background: rgba(168, 85, 247, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .github-link:hover {
+      background: rgba(168, 85, 247, 0.2);
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .arrow-icon {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+
+    .explore-projects {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 40px;
+    }
+
+    .explore-projects a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 12px 20px;
+      border-radius: 40px;
+      color: #a855f7;
+      border: 1px solid #a855f7;
+      background: rgba(168, 85, 247, 0.08);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.4s ease;
+    }
+
+    .explore-projects a:hover {
+      background: rgba(168, 85, 247, 0.2);
+      color: #fff;
+      border-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Header Start -->
+<header class="site-header">
+  <div class="logo">Kinsu</div>
+  <div style="display: flex; align-items: center; gap: 24px;">
+    <nav class="top-nav" id="navMenu">
+      <a href="https://github.com/pyKinsu" target="_blank"><i class="fab fa-github"></i> Follow Me</a>
+      <a href="https://github.com/pyKinsu/my-portfolio/stargazers" target="_blank"><i class="fas fa-star"></i> Give Star</a>
+      <a href="https://github.com/pyKinsu/my-portfolio/fork" target="_blank"><i class="fas fa-code-branch"></i> Fork Repo</a>
+      <a href="/pages/Contact"><i class="fas fa-paper-plane"></i> Contact</a>
+    </nav>
+    <a href="https://github.com/pyKinsu/my-portfolio" target="_blank" style="font-size: 1.4em; color: white;"><i class="fab fa-github"></i></a>
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" data-aos="zoom-in">
+  <div class="hero-card">
+    <img src="https://github.com/pyKinsu.png" alt="Kinsu Rajput" class="hero-img" />
+    <h1 class="hero-name">Kinsu Rajput</h1>
+    <p class="hero-title">BCA Student • Learning Python & C• Telegram Bot Developer</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <div class="glass-box">
+    I’m a BCA student from Bihar, India. I recently passed 12th and started my programming journey.
+    I love playing chess and building Telegram bots. Currently learning Python and HTML.
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+
+  <div class="project-button" data-aos="fade-up">
+    <h3> Termux-HandBook </h3>
+    <p> Learn Using Termux Commands Lessonwise.</p>
+    <div class="project-meta">
+      <span class="status-label">✅ Completed</span>
+      <a href="https://termux-handbook.vercel.app/" target="_blank" class="github-link">
+        Bot Link
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="project-button" data-aos="fade-up">
+    <h3> Insta Video Downloader </h3>
+    <p>Download videos from Instagram via our website.</p>
+    <div class="project-meta">
+      <span class="status-label">⚙️ Working</span>
+      <a href="https://reelsaver.veecel.app/" target="_blank" class="github-link">
+        GitHub Repo
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Explore More -->
+  <div class="explore-projects" data-aos="zoom-in">
+    <a href="/pages/Projects">Explore All Projects
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="explore-projects" data-aos="zoom-in">
+    <a href="/pages/">Explore All Pages
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="/" class="nav-btn"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="/pages/Projects" class="nav-btn"><i class="fas fa-code"></i><span>Projects</span></a>
+    <a href="/pages/Contact" class="nav-btn"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    <a href="/pages/" class="nav-btn"><i class="fas fa-th-list"></i><span>Pages</span></a>
+  </nav>
+</footer>
+
+<!-- AOS Init & Mobile Menu Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      navMenu.classList.remove('active');
+    }
+  });
+</script>
+
+</body>
+<!-- Made by @pyKinsu | https://github.com/pyKinsu/ -->
+</html>
