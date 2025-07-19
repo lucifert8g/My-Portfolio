@@ -1,0 +1,185 @@
+/* Shared Header, Footer, GitHub Button Styles for All Pages  */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow-x: hidden;
+}
+
+/* Header */
+header.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8em;
+  color: #00f2ff;
+}
+
+.top-nav {
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.top-nav a {
+  color: #ffff00;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1.5px solid #a855f7;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.15);
+  transition: all 0.3s ease;
+}
+
+.top-nav a:hover {
+  background: #000;
+  color: #000;
+  box-shadow: 0 0 12px rgba(0, 242, 255, 0.5);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #ffff00;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1.5px solid #a855f7;
+  border-radius: 12px;
+  padding: 6px 10px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .top-nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 14px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+    border: 1.5px solid rgba(168, 85, 247, 0.3);
+    z-index: 999;
+  }
+
+  .top-nav.active {
+    display: flex;
+  }
+}
+
+/* Footer */
+footer.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+  z-index: 1000;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00f2ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-btn i {
+  font-size: 1.3em;
+}
+
+.nav-btn span {
+  font-size: 0.75em;
+}
+
+.nav-btn:hover {
+  color: #fff;
+}
+
+/* Common GitHub Link Button */
+.github-link {
+  color: #a855f7;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1px solid #a855f7;
+  background: rgba(168, 85, 247, 0.08);
+  transition: all 0.3s ease;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.github-link:hover {
+  background: rgba(168, 85, 247, 0.2);
+  color: #fff;
+  border-color: #fff;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Vertical Side Line */
+.vertical-line {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #a855f7, #00f2ff);
+  filter: blur(6px);
+  z-index: 0;
+}
+
+/* Made by @pyKinsu | https://github.com/pyKinsu/ */
